@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 639346692492933035}
   - component: {fileID: 7043774889750882530}
-  - component: {fileID: 3310213152443206090}
   - component: {fileID: -7044256449612018020}
+  - component: {fileID: -7434247983432972004}
   m_Layer: 0
   m_Name: oilbarrel (2)
   m_TagString: Untagged
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3310213152443206090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4325252981798758866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a03badf2ddd4d574fad2be4ce86c10e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
 --- !u!61 &-7044256449612018020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +131,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.88, y: 3.21}
   m_EdgeRadius: 0
+--- !u!114 &-7434247983432972004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325252981798758866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a437f3bfb10331f47a6ec13e27e78681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  minXClamp: 3.32
+  maxXClamp: 230
+  minYClamp: -0.95
+  maxYClamp: 230.9
