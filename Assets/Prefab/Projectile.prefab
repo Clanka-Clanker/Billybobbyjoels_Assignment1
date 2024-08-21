@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8735675922286832371}
   - component: {fileID: 376898866820848418}
   - component: {fileID: 4349521992323618829}
+  - component: {fileID: -7674127386859185623}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -94,8 +95,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1838642633
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 648458604, guid: 15204e436a24e7e40ac618229961eefe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -124,7 +125,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 77c8c3cfcebd3e34bbb72ff8606a7b21, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -147,4 +148,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba570bb3c1e764458daef8b990e4350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 1
+  lifetime: 7.5
+--- !u!58 &-7674127386859185623
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4754567896200772801}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 77c8c3cfcebd3e34bbb72ff8606a7b21, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.17

@@ -58,10 +58,38 @@ public class Playah : MonoBehaviour
         //Grab horizontal axis - Check Project Settings > Input Manager to see the inputs defined
         float hInput = Input.GetAxis("Horizontal");
 
-        AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
+        //AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
 
         //Creat a small overlap collider to check if we are touching the ground
         IsGrounded();
+
+        //if (curPlayingClips.Length > 0)
+        //  {
+        //if (curPlayingClips[0].clip.name == "AsadAttack")
+        //rb.velocity = new Vector2(0, rb.velocity.y);
+        // else
+        // {
+        //rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
+        // }
+        //  }
+
+        rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+
+        if (Input.GetButtonDown("Fire1") && isGrounded)
+        {
+            anim.SetTrigger("AsadAttack");
+        }
+
+        if (Input.GetButtonDown("Fire1") && !isGrounded)
+        {
+            anim.SetTrigger("isJumpAttacking");
+        }
+
 
         //Button Input Checks
         if (Input.GetButtonDown("Jump") && isGrounded)

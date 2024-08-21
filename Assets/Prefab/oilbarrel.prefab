@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2799809554825759403}
   - component: {fileID: 9065778518207835205}
   - component: {fileID: 6485133765696775610}
-  - component: {fileID: 285463563260095420}
+  - component: {fileID: -4021223535296876524}
+  - component: {fileID: 7298541343948126621}
   m_Layer: 0
   m_Name: oilbarrel
   m_TagString: Untagged
@@ -131,7 +132,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.88, y: 3.21}
   m_EdgeRadius: 0
---- !u!114 &285463563260095420
+--- !u!114 &-4021223535296876524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,3 +149,16 @@ MonoBehaviour:
   maxXClamp: 230
   minYClamp: -0.95
   maxYClamp: 230.9
+--- !u!114 &7298541343948126621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611012802150180944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a03badf2ddd4d574fad2be4ce86c10e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
